@@ -10,9 +10,9 @@ for t in range(1, T + 1):
 
     print('#{}'.format(t), end='')
     for i in range(len(a)):
-        print(' ',end='')
+        print(' ', end='')
         print(a[i], end='')
-        print(' ',end='')
+        print(' ', end='')
         if i < len(b):
             print(b[i], end='')
     print()
