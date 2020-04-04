@@ -26,6 +26,7 @@ for t in range(1, T + 1):
                     maze[ny][nx] = cnt
                 elif maze[ny][nx] == '3':
                     last_cnt = cnt - 1
+                    q.clear()
                     break
 
     # for m in maze:
