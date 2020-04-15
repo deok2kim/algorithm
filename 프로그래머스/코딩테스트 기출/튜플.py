@@ -2,7 +2,7 @@ def solution(s):
     answer = []
     s = s[2:-2].split('},{')
     numbers_list = []
-
+    print(s)
     for i in s:
         tmp = list(map(int, i.split(',')))
         numbers_list.append(tmp)
