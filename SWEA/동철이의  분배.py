@@ -1,6 +1,6 @@
 # 시간이 너무 오래걸림;
 def backTracking(idx=0, total=100):
-    global max_num
+    global min_sum
     global visit
     if total <= max_num:
         return
@@ -24,7 +24,7 @@ for t in range(1, int(input()) + 1):
     # 람다 쓰는 방법
     # field = [list(map(lambda x: int(x) / 100, input().split())) for _ in range(N)]
     visit = [False] * N
-    max_num = 0
+    min_sum = 0
     # for i in field:
     #     print(i)
     # print()
@@ -32,4 +32,4 @@ for t in range(1, int(input()) + 1):
     # print(max_num)
     # max_num = max_num * (0.1**(N*2))
     print('#{}'.format(t), end=' ')
-    print(format(max_num, '0.6f'))
+    print(format(min_sum, '0.6f'))
