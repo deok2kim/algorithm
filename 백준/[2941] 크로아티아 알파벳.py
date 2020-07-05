@@ -1,30 +1,22 @@
 word = input()
-croatia = {
-    'c=': 'a',
-    'c-': 'b',
-    'dz=': 'c',
-    'd-': 'd',
-    'lj': 'e',
-    'nj': 'f',
-    's=': 'g',
-    'z=': 'h',
-}
+croatia = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
 
-start = 0
+idx = 0
 cnt = 0
 while True:
-    if croatia.get(word[start:start+2]):
-        start += 2
+    if word[idx:idx+2] in croatia:
+        idx += 2
         cnt += 1
 
-    elif croatia.get(word[start:start+3]):
-        start += 3
+    elif word[idx:idx+3] in croatia:
+        idx += 3
         cnt += 1
 
     else:
-        start += 1
+        idx += 1
+        cnt += 1
 
-    if start == len(word) - 1:
+    if idx == len(word):
         break
 
 print(cnt)
