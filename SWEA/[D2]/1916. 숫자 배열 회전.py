@@ -33,5 +33,6 @@ for tc in range(1, 1+T):
         tmp.reverse()
         lst_270.append(tmp)
 
+    print('#{}'.format(tc))
     for i in range(n):
         print(''.join(list(map(str, lst_90[i]))), ''.join(list(map(str, lst_180[i]))), ''.join(list(map(str, lst_270[i]))))
