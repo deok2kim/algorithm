@@ -12,3 +12,7 @@ function solution(s) {
 
 console.log(solution("abcde")) // c
 console.log(solution("qwer")) // we
+
+str = 'banana'
+console.log(str.slice(3))
+console.log(str.slice(2,5))
