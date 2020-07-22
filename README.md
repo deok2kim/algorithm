@@ -1,2 +1,2 @@
 # algorithm.py
-python algorithm
+python, javascript algorithm
