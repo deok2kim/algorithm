@@ -19,13 +19,13 @@ def solution(n, path, order):
 
     # print(precedeA, precedeB)
 
-    visited = [False]*n
-    visited[0] = True
+    visited = [0]*n
+    visited[0] = 1
 
     q = deque()
     q.append(0)
 
-    ready = [False]*n
+    # ready = [False]*n
 
     # 0이 선행이 필요하면 처음부터 접근 불가
     # if precedeB.get(0):
@@ -39,23 +39,27 @@ def solution(n, path, order):
         # if precedeA.get(precedeB.get(current)):
         #     ready[current] = 1
         if current == precedeA.get(precedeB.get(current)):
-            ready[current] = 1
+            visited[current] = 2
         else:
             for neighbor in adj[current]:
-                if visited[neighbor] is False:
+                if visited[neighbor] == 0:
 
                     q.append(neighbor)
-                    visited[neighbor] = True
+                    visited[neighbor] = 1
 
                     if precedeA.get(neighbor):  # 선행조건 일 때
-                        if ready[precedeA[neighbor]]:  # 이 선행조건을 필요로 하는 친구가 준비상태이면
+                        if visited[precedeA[neighbor]] == 2:  # 이 선행조건을 필요로 하는 친구가 준비상태이면
                             q.append(precedeA[neighbor])  # 출발시킨다
-                            visited[precedeA[neighbor]] = True
+                            visited[precedeA[neighbor]] = 1
 
                         precedeA[neighbor] = 0
 
-    if sum(visited) != n:
-        answer = False
+    # if sum(visited) != n:
+    #     answer = False
+    # print(visited)
+    for i in visited:
+        if i == 0:
+            return False
     return answer
 
 
