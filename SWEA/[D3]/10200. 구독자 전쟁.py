@@ -7,4 +7,4 @@ for tc in range(1, 1 + int(input())):
     if min_answer < 0:
         min_answer = 0
 
-    print('#{} {} {}'.format(n, max_answer, min_answer))
+    print('#{} {} {}'.format(tc, max_answer, min_answer))
