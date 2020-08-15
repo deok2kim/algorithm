@@ -5,8 +5,8 @@ function solution(a, b) {
     a = b
     b = tmp
   }
-  for (let index = a; index <= b; index++) {
-    answer += index
+  for (let n = a; n <= b; n++) {
+    answer += n
     
   }
   return answer;

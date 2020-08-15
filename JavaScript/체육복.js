@@ -22,4 +22,4 @@ console.log(solution(5, [2,5], [1,3,5]));
 console.log(solution(5, [2,4], [3]));
 console.log(solution(3, [3], 	[1]));
 
-console.log(solution(5, [2,3], [3,4]))
+console.log(solution(5, [2,3], [3,4]))  // 4

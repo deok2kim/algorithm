@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fe2c153-7270-4bab-b314-f82405e99d92" name="Default Changelist" comment="D3 1d2a">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/기능개발.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/기능개발.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/두 정수 사이의 합.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/두 정수 사이의 합.js" afterDir="false" />
@@ -203,6 +202,7 @@
       <workItem from="1596604745233" duration="164000" />
       <workItem from="1596604926387" duration="13000" />
       <workItem from="1596604950737" duration="15062000" />
+      <workItem from="1597212576567" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="D2 1d2a">
       <created>1594711260510</created>
