@@ -9,8 +9,10 @@ function solution(progresses, speeds) {
 
     while (1) {
       if (progresses[0] >= 100) {
-        progresses.splice(0, 1)
-        speeds.splice(0, 1)
+        // progresses.splice(0, 1)
+        // speeds.splice(0, 1)
+        progresses.shift()
+        progresses.shift()
         cnt ++
       } else {
         break
