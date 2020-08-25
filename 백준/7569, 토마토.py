@@ -1,8 +1,9 @@
 from _collections import deque
 
-dx, dy, dz = [-1, 1, 0, 0, 0, 0], [0, 0, -1, 1, 0, 0], [0, 0, 0, 0, -1, 1]  # 아래층 윗층 상 하 좌 우
+dx, dy, dz = [-1, 1, 0, 0, 0, 0], [0, 0, -1, 1, 0, 0], [0, 0, 0, 0, -1, 1]  # 아래층 윗층 앞 뒤 좌 우
 
 
+# BFS로 주변 토마토 익히기
 def ripen():
     while q:
         x, y, z = q.popleft()
@@ -16,6 +17,7 @@ def ripen():
                     q.append((nx, ny, nz))
 
 
+# 0이 있을 경우 토마토는 다 익지 못함, 0이 없으면 day를 return
 def check_ripen():
     max_day = 0
     for i in range(H):
@@ -47,7 +49,7 @@ for i in range(H):
             if box[i][j][k] == 1:
                 q.append((i, j, k))
 
-ripen()
 
+ripen()
 answer = check_ripen()
 print(answer)
