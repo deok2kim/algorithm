@@ -1,7 +1,6 @@
 from collections import deque
 
 def solution(board):
-    answer = 0
     answer = 999999
     q = deque()
     q.append((0, 0, 4, 0))
@@ -31,8 +30,8 @@ def solution(board):
                     nc += 100
                 else: # 바라보는 방향과 진행 방향이 서로 다를 때 | 코너와 직선이 생기므로 600원
                     nc += 500 + 100
-
-                if not visited.get((nx, ny, k)) or visited[(nx, ny, k)] > nc: # 방문한 적이 없거나, 방문한 적이 있어도 기존의 비용보다 지금 온 경로의 비용(nc))가 적다면
+                # 방문한 적이 없거나, 방문한 적이 있어도 기존의 비용보다 지금 온 경로의 비용(nc))가 적다면
+                if not visited.get((nx, ny, k)) or visited[(nx, ny, k)] > nc:
                     visited[(nx, ny, k)] = nc  # 배열에 추가하거나, nc를 갱신해 준다.
                     q.append((nx, ny, k, nc))  # 다음 출발 지를 q에 넣어준다.
     
