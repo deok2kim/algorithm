@@ -5,6 +5,4 @@ python
 
 https://deok2kim.tistory.com/
 
-테스트중1112
-
-두번째 테스트중 1115
+2022-02-03 python algorithm 다시 시작
